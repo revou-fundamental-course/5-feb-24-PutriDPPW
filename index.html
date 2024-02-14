@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PutriDPPW</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body> 
+        <div class="container">
+            <div class="flex-box">
+                <h1>Temperature Converter</h1>
+            </div>
+            <div class="flex-box">
+                <p>Enter the temperature in degrees Celsius (°C) into the bottom box, then click the Convert button to get the conversion results in Fahrenheit (°F).</p>
+            </div>
+            <div class="flex-box">
+                <div class="box">
+                    <h3 id="teks1">Celcius (°C): </h3>
+                    <input type="number" name="box1" id="box1">
+                </div>
+                <div class="box">
+                    <h3 id="teks2">Fahrenheit (°F): </h3>
+                    <input type="number" name="box2" id="box2" onKeyDown="return false">
+                </div>
+            </div>
+            <div class="flex-box">
+                <a class="tombol" onclick="konvert()">Convert</a>
+                <a class="tombol" onclick="ulang()">Reset</a>
+                <a class="tombol" onclick="balik()">Reverse</a>
+            </div>
+            <br>
+            <div class="flex-box">
+                <h3>How to calculate: </h3>
+            </div>        
+            <div class="flex-box">                
+                <p id="cara">[Script]</p>
+            </div>
+            <br><hr>
+            <div class="flex-box">
+                <h3>Temperature Conversion Formula</h3>
+            </div>
+            <div class="flex-box">
+                <p>
+                    Temperature in degrees Fahrenheit (°F) is equal to temperature in degrees Celsius (°C) times 9/5 plus 32.
+                    <br>
+                    °F = (9/5 × °C) + 32
+                    <br>
+                    or
+                    <br>
+                    °C = (°F-32) x 5/9
+                </p> 
+            </div>
+            <hr>
+            <div class="flex-box">
+                <p>PutriDPPW</p>
+                <p>@2024</p>
+            </div>
+        </div>
+    </body>
 </html>
